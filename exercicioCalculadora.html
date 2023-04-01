@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <div id=" resulid"></div>
+    <script>
+        function soma(num1,num2){
+            resultado = num1 + num2
+            return resultado;
+        }
+        function subtr(num1,num2){
+            resultado = num1 - num2
+            return resultado;
+        }
+        function div(num1,num2){
+            resultado = num1 / num2
+            return resultado;
+        }
+        function mult(num1,num2){
+            resultado = num1 * num2
+            return resultado;
+        }
+
+        let outrocalculo = number (prompt("Deseja fazer um calculo? \n 1 - não \n 2 - sim"))
+        while( outrocalculo ==0){
+            
+        }
+        let resul; 0
+      
+        let num1 = number(prompt("Digite o primeiro valor"));
+        let num2 = number(prompt("Digite o segundo valor"));
+
+
+        let operador = number(prompt("Qual operador deseja.\n 1 - Soma\n 2 - Subtrair \n 3 - Multiplicação \n 4 - Divisão") );
+        switch (operador) {
+            case 1:
+                resul += soma (num1,num2);
+                ope = "+";
+                break;
+                case 2:
+                resul += subtr (num1,num2);
+                ope = "-";
+                break;
+                case 3:
+                resul += mult (num1,num2);
+                ope = "*";
+                break;
+                case 4:
+                resul += div (num1,num2);
+                ope = "/";
+                break;
+default:
+    break;
+
+        }
+
+document.getElementById("resulid").innerHTML += Num1 + ope + Num2  + "Resultado" + resul + "</br>"; 
+outrocalculo = number (prompt("Deseja fazer outro calculo? \n 1 - sim \n 2- não"));
+
+        
+    </script>
+</body>
+</html>
